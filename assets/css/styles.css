@@ -219,6 +219,11 @@ img {
     border-radius: 1.5rem 1.5rem 0 0;
     transition: .3s;
   }
+
+  .skills__grid{
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
 }
 
 .nav__list{
@@ -429,6 +434,18 @@ img {
 /*==================== SKILLS ====================*/
 .skills__container{
   row-gap: 0;
+}
+
+.skills__grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.skills__column{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .skills__header{
