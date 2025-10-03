@@ -219,6 +219,16 @@ img {
     border-radius: 1.5rem 1.5rem 0 0;
     transition: .3s;
   }
+
+  .skills__grid{
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .journey__grid{
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
 }
 
 .nav__list{
@@ -431,6 +441,18 @@ img {
   row-gap: 0;
 }
 
+.skills__grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.skills__column{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
 .skills__header{
   display: flex;
   align-items: center;
@@ -482,6 +504,32 @@ img {
 }
 
 /*==================== JOURNEY ====================*/
+.journey__grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.journey__column{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.journey__section-title{
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--first-color);
+  margin-bottom: var(--mb-1);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.journey__section-title i{
+  font-size: 1.5rem;
+}
+
 .journey__tabs{
   display: flex;
   justify-content: space-evenly;
